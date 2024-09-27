@@ -6,7 +6,7 @@ Differential Privacy (DP) has emerged as a rigorous mathematical framework for u
 from <1% to ≈10%. The findings reveal that DP-LR offers the best performance but is highly sensitive to privacy, DP-RF is the least sensitive to privacy but the most impacted by data imbalance, and DP-NB allows for the highest levels of privacy paired with very good performance and low computational overheads even when trained on extremely imbalanced data. This research concludes that DP-NB is the most optimal of the approaches studied in terms of privacy, performance, and computational efficiency when trained on imbalanced data, particularly after addressing the imbalance with SMOTE.
 
 ## Introduction
-This project explores the impact of data imbalance on ε-Differential Privacy in machine learning algorithms. It includes a set of Jupyter notebooks that demonstrate the findings and methods used in the study.
+This project explores the impact of data imbalance on ε-Differential Privacy in machine learning algorithms using the diffprivlib library developed by IBM. It includes a set of Jupyter notebooks that demonstrate the findings and methods used in the study.
 
 ## Execution Environment
 The notebooks were developed and tested in the following environment:
