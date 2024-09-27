@@ -11,6 +11,8 @@ This project explores the impact of data imbalance on ε-Differential Privacy in
 ## Findings
 This study revealed the impact of SMOTE on DP and the privacy-utility trade-off point for three ML algorithms commonly used in binary classifications. The results indicate that SMOTE significantly enhances the performance of DP-RF, suggesting that this ensemble method is particularly sensitive to class imbalance. This sensitivity may explain the observed discrepancies between the performances of non-private scikit-learn and DP-RF($\epsilon$ = $\infty$). Additionally, the dramatic performance improvement in NB under DP conditions when combined with SMOTE warrants further investigation. Understanding whether this boost is due to overfitting or other factors remains an open question. While these findings can point research and industry alike using real-world extremely imbalanced datasets ($\pi$ < 1\%) into focusing their initial investigations on NB, they also underscore the necessity for more focused experimentation to determine the repeatability and underlying causes of these interactions. Future research should delve deeper into these aspects to build a comprehensive understanding of the interplay between SMOTE, DP, and ML algorithms, ultimately advancing the field of privacy-preserving data mining.
 
+![Combined results](https://github.com/kayakalison/data-imbalance-dp/blob/main/figures/Combined-Graph2.png)
+
 ## Execution Environment
 The notebooks were developed and tested in the following environment:
 - Jupyter® Notebook running on a Python 3 kernel 
