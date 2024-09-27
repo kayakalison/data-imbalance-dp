@@ -75,17 +75,11 @@ Note: Running each of these files will over-write the figures in the local figur
 ## Citing this Work
 If you use this for research, please consider citing the folowing reference paper:
 ```
-  @inproceedings{data-imbalance-dp,
+  @mastersthesis{data-imbalance-dp,
   author={Krauskopf, Alison},
   title={Exploring the impact of data imbalance on ε-Differential Privacy},
-  booktitle = {TBD},
+  school = {University of York},
   year={2024},
-  isbn = {TBD},
-  address = {Seattle, WA},
-  pages = {TBD},
-  url = {TBD},
-  publisher = {TBD},
-  month = sept
 }
 ```
 
