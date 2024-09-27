@@ -59,20 +59,18 @@ To run the notebooks:
 3. **Select Jupyter Notebook.**
 4. **Navigate to the file location where this artefact directory is stored.**
 5. **Open and run the notebooks in the following order**:
-    1. `IRP Data Pre-Processing.ipynb`, approx. processing time: 2 minutes
-    2. `IRP NB.ipynb`, approx. processing time: 1.4 hours
-    3. `IRP LR.ipynb`, approx. processing time: 4.6 hours
-    4. `IRP RF.ipynb`, approx. processing time: 11.5 hours
+    1. `Diffprivlib Experiment-NB.ipynb`, approx. processing time: 1.4 hours
+    2. `Diffprivlib Experiment-LR.ipynb`, approx. processing time: 4.6 hours
+    3. `Diffprivlib Experiment-RF.ipynb`, approx. processing time: 11.5 hours
 
-Note: Running each of these files will over-write the figures in the local Figures folder with new, identical versions.
+Note: Running each of these files will over-write the figures in the local figures folder with new, identical versions.
 
 ## File Descriptions
-- `IRP Data Pre-Processing Final.ipynb`: A Jupyter® notebook containing all data cleaning, pre-processing, and feature selection.
-- `IRP NB.ipynb`: A Jupyter® notebook containing the NB analysis.
-- `IRP LR.ipynb`: A Jupyter®  notebook containing the LR analysis.
-- `IRP RF.ipynb`: A Jupyter® notebook containing the RF analysis.
-- `Datasets Folder`: A folder containing all of the datasets required for reproducibility.
-- `Results Folder`: A folder containing all of the figures output by this code and included in Appendices D-F.
+- `Diffprivlib Experiment-NB.ipynb`: A Jupyter® notebook containing the NB analysis.
+- `Diffprivlib Experiment-LR.ipynb`: A Jupyter®  notebook containing the LR analysis.
+- `Diffprivlib Experiment-RF.ipynb`: A Jupyter® notebook containing the RF analysis.
+- `datasets` folder: A folder containing all of the datasets required for reproducibility.
+- `figures` folder: A folder containing all of the figures output by this code.
 
 ## Citing this Work
 If you use this for research, please consider citing the folowing reference paper:
