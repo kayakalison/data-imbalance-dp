@@ -3,7 +3,7 @@ Exploring the impact of data imbalance on ε-Differential Privacy
 
 ## Abstract
 Differential Privacy (DP) has emerged as a rigorous mathematical framework for use in privacy preserving data mining. While the effects of imbalanced data have been extensively studied in classical Machine Learning (ML), their implications on DP remain largely unexplored. This study examines the impact of class imbalance on the privacy-utility trade-off across three differentially private ML algorithms: Gaussian Naïve Bayes (NB), Logistic Regression (LR), and Random Forest (RF). Using Synthetic Minority Oversampling Technique (SMOTE) it evaluates the performance and privacy sensitivity of these learners at varying levels of imbalance
-from <1% to ≈10%. The findings reveal that DP-LR offers the best performance but is highly sensitive to privacy, DP-RF is the least sensitive to privacy but the most impacted by data imbalance, and DP-NB allows for the highest levels of privacy paired with very good performance and low computational overheads even when trained on extremely imbalanced data. This research concludes that DP-NB is the most optimal of the approaches studied in terms of privacy, performance, and computational efficiency when trained on imbalanced data, particularly after addressing the imbalance with SMOTE.
+from <1% to ≈10%. The findings reveal that differentially private LR (DP-LR) offers the best performance but is highly sensitive to privacy, differentially private RF (DP-RF) is the least sensitive to privacy but the most impacted by data imbalance, and differentially private NB (DP-NB) allows for the highest levels of privacy paired with very good performance and low computational overheads even when trained on extremely imbalanced data. This research concludes that DP-NB is the most optimal of the approaches studied in terms of privacy, performance, and computational efficiency when trained on imbalanced data, particularly after addressing the imbalance with SMOTE.
 
 ## Introduction
 This project explores the impact of data imbalance on ε-Differential Privacy in machine learning algorithms using the diffprivlib library developed by IBM. It includes a set of Jupyter notebooks that demonstrate the findings and methods used in the study.
@@ -74,8 +74,8 @@ Note: Running each of these files will over-write the figures in the local figur
 - `Diffprivlib Experiment-NB.ipynb`: A Jupyter® notebook containing the NB analysis.
 - `Diffprivlib Experiment-LR.ipynb`: A Jupyter®  notebook containing the LR analysis.
 - `Diffprivlib Experiment-RF.ipynb`: A Jupyter® notebook containing the RF analysis.
-- `datasets` folder: A folder containing all of the datasets required for reproducibility.
-- `figures` folder: A folder containing all of the figures output by this code.
+- `datasets`: A folder containing all of the datasets required for reproducibility.
+- `figures`: A folder containing all of the figures output by this code.
 
 ## Citing this Work
 If you use this for research, please consider citing the folowing reference paper:
