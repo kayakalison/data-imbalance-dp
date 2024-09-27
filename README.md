@@ -60,14 +60,13 @@ To run the notebooks:
     3. `IRP LR.ipynb`, approx. processing time: 4.6 hours
     4. `IRP RF.ipynb`, approx. processing time: 11.5 hours
 
-Note: Running each of these files will over-write the figures in the Figures folder with new, identical versions.
+Note: Running each of these files will over-write the figures in the local Figures folder with new, identical versions.
 
 ## File Descriptions
 - `IRP Data Pre-Processing Final.ipynb`: A Jupyter® notebook containing all data cleaning, pre-processing, and feature selection.
 - `IRP NB.ipynb`: A Jupyter® notebook containing the NB analysis.
 - `IRP LR.ipynb`: A Jupyter®  notebook containing the LR analysis.
 - `IRP RF.ipynb`: A Jupyter® notebook containing the RF analysis.
-- `FastTrack Ethics Application Krauskopf20240513.pdf`: A pdf copy of the approved ethics approval for this research.
 - `Datasets Folder`: A folder containing all of the datasets required for reproducibility.
 - `Results Folder`: A folder containing all of the figures output by this code and included in Appendices D-F.
 
