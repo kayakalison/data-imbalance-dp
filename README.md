@@ -92,7 +92,7 @@ If you use this for research, please consider citing the folowing reference pape
 ```
 
 ## References
-- Holohan, N., Braghin, S., Aonghusa, P.M., and Levancher, K. Diffprivlib: The IBM differential privacy library. ArXivabs/1907.02444 (2019). doi: 10.48550/arXiv.1907.02444
+- Holohan, N., Braghin, S., Aonghusa, P.M., and Levancher, K. Diffprivlib: The IBM differential privacy library. *ArXiv e-prints 1907.02444 [cs.CR]* (2019). doi: 10.48550/arXiv.1907.02444
 
 ## Contact Information
 For any questions or issues, please contact:
