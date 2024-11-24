@@ -2,14 +2,15 @@
 Exploring the impact of data imbalance on ε-Differential Privacy
 
 ## Abstract
-Differential Privacy (DP) has emerged as a rigorous mathematical framework for use in privacy preserving data mining. While the effects of imbalanced data have been extensively studied in classical Machine Learning (ML), their implications on DP remain largely unexplored. This study examines the impact of class imbalance on the privacy-utility trade-off across three differentially private ML algorithms: Gaussian Naïve Bayes (NB), Logistic Regression (LR), and Random Forest (RF). Using Synthetic Minority Oversampling Technique (SMOTE) it evaluates the performance and privacy sensitivity of these learners at varying levels of imbalance
-from <1% to ≈10%. The findings reveal that DP-LR offers the best performance but is highly sensitive to privacy, DP-RF is the least sensitive to privacy but the most impacted by data imbalance, and DP-NB allows for the highest levels of privacy paired with very good performance and low computational overheads even when trained on extremely imbalanced data. This research concludes that DP-NB is the most optimal of the approaches studied in terms of privacy, performance, and computational efficiency when trained on imbalanced data, particularly after addressing the imbalance with SMOTE.
+Differential Privacy (DP) has emerged as a rigorous mathematical framework for use in privacy preserving data mining. While the effects of imbalanced data have been extensively studied in classical Machine Learning (ML), their implications on DP remain largely unexplored. This study examines the impact of class imbalance on three differentially private ML algorithms: Gaussian Naive Bayes (NB), Logistic Regression (LR), and Random Forest (RF). It evaluates the performance and privacy sensitivity of these learners at varying levels of imbalance from 0.6\% to 20\%. The findings reveal that while DP-LR achieves the best performance, this comes at a privacy budget so large as to provide no meaningful protection; DP-RF is less sensitive to privacy but the most impacted by data imbalance; and DP-NB allows for the highest levels of privacy paired with very good performance and low computational overheads. This research concludes that DP-NB is the most optimal of the approaches studied in terms of privacy, performance, and computational efficiency when trained on highly imbalanced data.
 
 ## Introduction
-This project explores the impact of data imbalance on ε-Differential Privacy in machine learning algorithms using the diffprivlib library developed by IBM. It includes a set of Jupyter notebooks that demonstrate the findings and methods used in the study.
+This project explores the impact of data imbalance on ε-Differential Privacy in machine learning algorithms using the diffprivlib library developed by IBM [1]. It includes a set of Jupyter notebooks that demonstrate the findings and methods used in the study.
 
 ## Findings
-This study revealed the impact of SMOTE on DP and the privacy-utility trade-off point for three ML algorithms commonly used in binary classifications. The results indicate that SMOTE significantly enhances the performance of DP-RF, suggesting that this ensemble method is particularly sensitive to class imbalance. This sensitivity may explain the observed discrepancies between the performances of non-private scikit-learn and DP-RF($\epsilon$ = $\infty$). Additionally, the dramatic performance improvement in NB under DP conditions when combined with SMOTE warrants further investigation. Understanding whether this boost is due to overfitting or other factors remains an open question. While these findings can point research and industry alike using real-world extremely imbalanced datasets ($\pi$ < 1\%) into focusing their initial investigations on NB, they also underscore the necessity for more focused experimentation to determine the repeatability and underlying causes of these interactions. Future research should delve deeper into these aspects to build a comprehensive understanding of the interplay between SMOTE, DP, and ML algorithms, ultimately advancing the field of privacy-preserving data mining.
+This study revealed the impact of data imbalance on three differentially private ML algorithms commonly used in binary classification. The results indicate that the level of imbalance will impact both the performance of a algorithm and its sensitivity to the privacy mechanism of DP, but that the extent of this impact will vary with the algorithm involved. The severity of the imbalance significantly impacted the performance of both the non-private RF ($\epsilon$ = $\infty$) and DP-RF, suggesting that this ensemble method within the \texttt{diffprivlib} library is particularly sensitive to class imbalance. This sensitivity may have contributed to the observed discrepancies between the performances of non-private \texttt{scikit-learn} and DP-RF($\epsilon$ = $\infty$). Additionally, the dramatic performance improvement in NB under DP conditions when brought more into balance warrants further investigation. Understanding whether this boost is due to overfitting or other factors remains an open question. And finally, this study revealed that the LR method is extremely sensitive to the privacy mechanisms of DP and may be the least suited for differentially private binary classifications.
+
+![Combined results](https://github.com/kayakalison/data-imbalance-dp/blob/main/figures/Combined-Graph5.png)
 
 ## Execution Environment
 The notebooks were developed and tested in the following environment:
@@ -72,8 +73,8 @@ Note: Running each of these files will over-write the figures in the local figur
 - `Diffprivlib Experiment-NB.ipynb`: A Jupyter® notebook containing the NB analysis.
 - `Diffprivlib Experiment-LR.ipynb`: A Jupyter®  notebook containing the LR analysis.
 - `Diffprivlib Experiment-RF.ipynb`: A Jupyter® notebook containing the RF analysis.
-- `datasets` folder: A folder containing all of the datasets required for reproducibility.
-- `figures` folder: A folder containing all of the figures output by this code.
+- `datasets`: A folder containing all of the datasets required for reproducibility.
+- `figures`: A folder containing all of the figures output by this code.
 
 ## Citing this Work
 If you use this for research, please consider citing the folowing reference paper:
@@ -88,4 +89,4 @@ If you use this for research, please consider citing the folowing reference pape
 ```
 
 ## References
-- Holohan, N., Braghin, S., Aonghusa, P.M., and Levancher, K. Diffprivlib: The IBM differential privacy library. *ArXiv e-prints 1907.02444 [cs.CR]* (2019). doi: 10.48550/arXiv.1907.02444
+[1] N. Holohan, S. Braghin, P.M. Aonghusa, and K. Levancher, "Diffprivlib: The IBM differential privacy library," *ArXiv e-prints 1907.02444 [cs.CR]*, 2019. doi: 10.48550/arXiv.1907.02444
