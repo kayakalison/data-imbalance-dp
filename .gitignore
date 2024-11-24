@@ -1,0 +1,14 @@
+# Ignore PyCharm project settings
+.idea/
+
+# Ignore Python cache and virtual environment
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+*.egg
+*.egg-info/
+dist/
+build/
