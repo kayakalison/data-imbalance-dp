@@ -1,3 +1,6 @@
+# Ignore macOS hidden system files
+.DS_Store
+
 # Ignore PyCharm project settings
 .idea/
 
